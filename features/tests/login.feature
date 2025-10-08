@@ -6,15 +6,16 @@ Feature: Login feature
     Given User opens buisy login page
     When enter correct email
     And enter correct password
-#    And click login button
+    And click login button
     And navigate to main login url
     Then confirm welcome is displayed
 
-#  Scenario: Verify user cannot login with incorrect credentials
-#    Given User opens buisy login page
-#    When enter incorrect email
-#    And enter incorrect password
-#    Then Invalid credentials error message is displayed
+  Scenario: Verify user cannot login with incorrect credentials
+    Given User opens buisy login page
+    When enter incorrect email
+    And enter incorrect password
+    And click login button
+    Then Invalid credentials error message is displayed
 #
 #    Scenario Outline: Verify that changing language works
 #      Given User opens buisy login page
