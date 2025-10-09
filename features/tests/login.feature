@@ -16,16 +16,16 @@ Feature: Login feature
     And enter incorrect password
     And click login button
     Then Invalid credentials error message is displayed
-#
-#    Scenario Outline: Verify that changing language works
-#      Given User opens buisy login page
-#      When Click from the dropdown <Language>
-#      Then confirm <welcome message> is displayed
-#
-#      Examples:
-#        |Language   |welcome message                  |
-#        |Swahili    |Tafadhali Ingiza Habari yako     |
-#        |French     |Veuillez saisir vos informations |
-#        |Portuguese |Insira suas informações          |
+
+    Scenario Outline: Verify that changing language works
+      Given User opens buisy login page
+      When Click from the dropdown <Language>
+      Then confirm <welcome message> is displayed
+
+      Examples:
+        |Language |welcome message                  |
+        |SW       |Tafadhali Ingiza Habari yako     |
+        |FR       |Veuillez saisir vos informations |
+        |PT       |Insira suas informações          |
 
 
