@@ -10,7 +10,6 @@ Feature: Login feature
     And click login button
     And navigate to main login url
     Then confirm welcome is displayed
-    When click the stock and cash app traccker card
 
 
   Scenario: Verify user cannot login with incorrect credentials
@@ -32,7 +31,6 @@ Feature: Login feature
         |FR       |Veuillez saisir vos informations |
         |PT       |Insira suas informações          |
 
-    @single
     Scenario: Verify that agent can access dashboard on login
     Given User opens buisy login page
     When enter correct email

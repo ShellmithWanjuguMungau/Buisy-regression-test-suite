@@ -52,7 +52,10 @@ def click_language(context,language):
 @when("click the stock and cash app tracker card")
 def click_the_stock_and_cash_app(context):
     context.driver.wait.until(
-        EC.visibility_of_element_located((By.CSS_SELECTOR, '[href*="stock"]'))
+        EC.invisibility_of_element((By.ID, "loader"))
+    )
+    context.driver.wait.until(
+        EC.element_to_be_clickable((By.CSS_SELECTOR, '[href*="stock"]'))
     ).click()
 
 
